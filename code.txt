@@ -1,0 +1,56 @@
+test-1 레포지토리 사용(혼자 실습이지만 여러 사람이 하는 것처럼 생각)
+
+git-office에서 작업(apple 사람)
+
+git branch apple
+git switch apple
+vim f4.txt -- "f4"추가 & 저장
+git add f4.txt
+git commit -m "create f4"
+git push origin apple
+
+-----------------------------
+git-hub에서 작업
+
+apple브랜치에 push 확인
+pull request ( main <- apple)
+merge
+----------------------------
+git-office에서 작업
+
+git switch main
+git pull
+
+git switch apple
+git merge main
+
+-----------------------------------------
+git-office에서 작업(ms사람)
+
+git branch ms
+git switch ms
+vim f5.txt -- "f5"추가 & 저장
+git add f5.txt
+git commit -m "create f5"
+git push origin ms
+
+--------------------------------------
+git-hub에서 작업
+
+apple브랜치에 push 확인
+pull request ( main <- ms)
+merge
+----------------------------------------
+ 
+git-office에서 작업(apple사람)
+
+git switch main
+git pull
+
+git switch apple
+git merge main
+
+git-office에서 작업(ms사람)
+
+git switch ms
+git merge main
