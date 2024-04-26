@@ -1,8 +1,2 @@
-c
-s
-d
-s
-d
-o
-o
-
+int a = 0;
+int b = 5;
